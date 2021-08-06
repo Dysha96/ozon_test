@@ -25,7 +25,7 @@ assert(isInclude([1, 2, 3, 5, 7, 9, 11], [4, 5, 7]) == false)
 composer install
 ```
 
-Для запуска тестов из корневого каталога вызвать
+Для запуска тестов необходимо из корневого каталога проекта вызвать
 
 ```bash
 ./vendor/phpunit/phpunit/phpunit ./tests/FunctionsTest.php
