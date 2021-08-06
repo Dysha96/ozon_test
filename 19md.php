@@ -64,10 +64,10 @@ function isInclude($array, $subArray): bool
     $lengthSubArray = count($subArray);
 
     for ($i = $startKey; $i < $lengthArray; $i++) {
+        if ($lengthSubArray > $lengthArray - $i) {
+            return false;
+        }
         foreach ($subArray as $j => $jValue) {
-            if ($lengthSubArray > $lengthArray - $i) {
-                return false;
-            }
             if ($array[$i + $j] === $jValue) {
                 continue;
             }
